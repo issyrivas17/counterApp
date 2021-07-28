@@ -2,9 +2,8 @@
    
    /*  import React, { Fragment } from 'react';  */
 
-    const PrimeraApp = () => { 
+    const PrimeraApp = ({saludo ="Hola amigos! Bienvenidos a counter."}) => {
 
-         const saludo = 'Hola amigos!, bienvenidos a counter.'
         return <>
         <h1>{saludo}</h1>
            {/*  <pre>{JSON.stringify(saludo,null,3)}</pre>  */}
