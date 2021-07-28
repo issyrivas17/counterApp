@@ -9,5 +9,5 @@
 
     console.log(divRoot);  
 
-    ReactDOM.render(<PrimeraApp />,divRoot); 
+    ReactDOM.render(<PrimeraApp saludo='Hola amigos! Bienvenidos a counter.' />,divRoot); 
 
