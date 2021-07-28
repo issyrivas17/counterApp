@@ -2,10 +2,12 @@
    
    /*  import React, { Fragment } from 'react';  */
 
-    const PrimeraApp = () => {
+    const PrimeraApp = () => { 
 
+         const saludo = 'Hola amigos!, bienvenidos a counter.'
         return <>
-            <h1>Hola mundo</h1>
+        <h1>{saludo}</h1>
+           {/*  <pre>{JSON.stringify(saludo,null,3)}</pre>  */}
             <p>Mi primera aplicacion web con React</p>
                                                          
         </>;
