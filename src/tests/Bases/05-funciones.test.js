@@ -18,12 +18,13 @@ describe('Pruebas de funciones', () => {
 
     test('getUsuarioActivo debe retornar un objeto', () => { 
 
-        const nombre = 'Juan';
+        const nombre = "Juan";
         const user= getUsuarioActivo(nombre);  
-        expect (user).toEqual ({
-         uid: 'ABC567',
-         username:nombre
-     }); 
+       
+        expect(user).toEqual ({
+            uid: 'ABC567',
+            username: 'nombre'
+        })
      
     })
     
