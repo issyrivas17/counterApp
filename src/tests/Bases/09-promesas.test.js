@@ -2,17 +2,17 @@ import { getHeroeByIdAsync } from "../../base-pruebas/09-promesas";
 import heroes from "../../data/heroes";
 
 
-describe('Pruebas con promesas', (done) => {
-    test('Debe retornar un heroe async', () => {
+describe('Pruebas con promesas',() => {
+
+    test('Debe retornar un heroe async', (done) => {
         const id = 1; 
        
-            getHeroeByIdAsync (id) 
+            getHeroeByIdAsync(id)
             .then (heroe => {
-
                 expect(heroe).toBe(heroes)
             done();
 
-            })
+            }); 
         
     })  
 
@@ -22,7 +22,7 @@ describe('Pruebas con promesas', (done) => {
 
         getHeroeByIdAsync(id) 
         .catch(error => {
-            expect (error).toBe('No se puede encontrar el heroe')
+            expect(error).toBe('No se puede encontrar el heroe')
         })
 
         done(); 
