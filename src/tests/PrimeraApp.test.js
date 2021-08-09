@@ -1,7 +1,12 @@
+
+
+import "../setupTests"
 import React from 'react';
-import { shallow } from "@wojtekmaj/enzyme-adapter-react-17";
+import {shallow} from "enzyme";
 import PrimeraApp from "../PrimeraApp"; 
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom' 
+
+
 
 describe('Pruebas en <PrimeraApp/>', () => { 
 /*  test('Debe mostrar el mensaje de "Hola,soy ismenia"', () => {
@@ -16,9 +21,9 @@ describe('Pruebas en <PrimeraApp/>', () => {
 test('Debe de mostrar <PrimeraApp/> correctamente', () => {
     
     const saludo= 'Hola,soy ismenia'; 
-const wrapper=shallow(<PrimeraApp saludo={saludo} />) 
+const wrapper= shallow (<PrimeraApp saludo={saludo} />) 
 
-expect (wrapper).toMatchSnapshot(); 
+expect(wrapper).toMatchSnapshot();
 
 
 
